@@ -1,0 +1,119 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "author": {
+    "name": "seyed mojtaba shadab",
+    "email": "shaadcode@gmail.com",
+    "url": "https://www.shaadcode.ir/"
+  },
+  "repository": "https://github.com/shaadcode/Nextjs-Frontend-Boilerplate",
+  "engines": {
+    "node": ">=20",
+    "pnpm": "10.10.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "scripts": {
+    "dev": "pnpm open-browser:win && next dev --turbopack -p 3000",
+    "open-browser:linux": "open http://localhost:3000",
+    "open-browser:win": "start http://localhost:3000",
+    "build": "next build",
+    "build:safe": "pnpm check-types && next build",
+    "build:analyze": "ANALYZE=true pnpm build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "lint:fix": "eslint . --fix",
+    "preinstall": "only-allow pnpm",
+    "check-types": "tsc --noEmit --pretty",
+    "commit": "cz",
+    "precommit": "lint-staged",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.17.7",
+    "@mantine/form": "^7.17.7",
+    "@mantine/hooks": "^7.17.7",
+    "@next/bundle-analyzer": "^15.3.1",
+    "@tabler/icons-react": "^3.31.0",
+    "next": "15.3.1",
+    "next-intl": "^4.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
+    "@biomejs/biome": "1.9.4",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint-react/eslint-plugin": "^1.48.5",
+    "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.3.1",
+    "@playwright/test": "^1.52.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@storybook/addon-essentials": "8.6.12",
+    "@storybook/addon-onboarding": "8.6.12",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/blocks": "8.6.12",
+    "@storybook/experimental-addon-test": "8.6.12",
+    "@storybook/experimental-nextjs-vite": "8.6.12",
+    "@storybook/preview-api": "^8.6.12",
+    "@storybook/react": "8.6.12",
+    "@storybook/test": "8.6.12",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitest/browser": "^3.1.2",
+    "@vitest/coverage-v8": "^3.1.2",
+    "cz-git": "^1.11.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-storybook": "^0.12.0",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "only-allow": "^1.2.1",
+    "open": "^10.1.2",
+    "playwright": "^1.52.0",
+    "postcss": "^8.5.3",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "storybook": "8.6.12",
+    "storybook-dark-mode": "^4.0.2",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.2",
+    "vitest-fail-on-console": "^0.7.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^19",
+      "@types/react-dom": "^19"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
