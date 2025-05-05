@@ -57,10 +57,18 @@ module.exports = {
       { value: 'revert', name: 'revert:   Reverts a previous commit', emoji: ':rewind:' },
     ],
     scopes: [
-      // {
-      //   name: '',
-      //   value: '',
-      // },
+      {
+        name: 'testing : Add or update unit/E2E tests (Vitest / Playwright)',
+        value: 'testing',
+      },
+      {
+        name: 'deps : Add, remove, or update project dependencies',
+        value: 'deps',
+      },
+      {
+        name: 'config : Update project configuration files or settings (e.g., ESLint, i18n, Next.js, environment)',
+        value: 'config',
+      },
     ],
 
     allowCustomScopes: true,
