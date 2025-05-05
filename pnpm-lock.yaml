@@ -172,6 +172,9 @@ importers:
       postcss-simple-vars:
         specifier: ^7.0.1
         version: 7.0.1(postcss@8.5.3)
+      semantic-release:
+        specifier: ^24.2.3
+        version: 24.2.3(typescript@5.8.3)
       storybook:
         specifier: 8.6.12
         version: 8.6.12
@@ -6435,7 +6438,7 @@ snapshots:
   '@commitlint/format@19.8.0':
     dependencies:
       '@commitlint/types': 19.8.0
-      chalk: 5.3.0
+      chalk: 5.4.1
 
   '@commitlint/is-ignored@19.8.0':
     dependencies:
@@ -6455,7 +6458,7 @@ snapshots:
       '@commitlint/execute-rule': 19.8.0
       '@commitlint/resolve-extends': 19.8.0
       '@commitlint/types': 19.8.0
-      chalk: 5.3.0
+      chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.8.3)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@20.17.32)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3)
       lodash.isplainobject: 4.0.6
@@ -6506,7 +6509,7 @@ snapshots:
   '@commitlint/types@19.8.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.3.0
+      chalk: 5.4.1
 
   '@discoveryjs/json-ext@0.5.7': {}
 

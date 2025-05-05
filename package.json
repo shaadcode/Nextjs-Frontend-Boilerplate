@@ -92,6 +92,7 @@
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1",
+    "semantic-release": "^24.2.3",
     "storybook": "8.6.12",
     "storybook-dark-mode": "^4.0.2",
     "tailwindcss": "^4",
