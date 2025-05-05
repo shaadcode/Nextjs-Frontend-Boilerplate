@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Frontend Boilerplate
 
-## Getting Started
+> A modern, batteries-included Next.js 15 frontend boilerplate designed for rapid development and scalable applications.
 
-First, run the development server:
+---
+
+## 🎯 Features
+
+- ⚡ **Next.js 15** with **Turbopack** support
+- 🎨 UI powered by **Mantine v7**
+- 🌍 Built-in **Internationalization (i18n)** with `next-intl`
+- 🧪 **Vitest** for unit testing + `vitest-setup.ts`
+- 🧭 **Playwright** for E2E testing
+- 🧼 Strict linting via **ESLint** and **lint-staged**
+- 🎨 **TailwindCSS v4** ready
+- 📦 **Storybook 8** with onboarding & styling addons
+- 📖 **Commitlint**, **Husky**, and **Conventional Commits** setup
+- 📐 **TypeScript** + aliases + strong types
+- ✨ Pre-configured `postcss`, `cz-git`, and custom `scripts`
+- 🗂️ Clean folder structure and scalable architecture
+
+---
+
+## 🛠️ Getting Started
+
+### 📦 Requirements
+
+- **Node.js** ≥ 20
+- **pnpm** = 10.10.0
+
+### 🔧 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🏁 Run the app (with Turbopack)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This opens `http://localhost:3000` automatically.
 
-## Learn More
+## 🧪 Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command                | Description                   |
+| ---------------------- | ----------------------------- |
+| `pnpm dev`             | Start dev server (Turbopack)  |
+| `pnpm build`           | Build for production          |
+| `pnpm lint`            | Run ESLint                    |
+| `pnpm test`            | Run unit tests via Vitest     |
+| `pnpm test:e2e`        | Run E2E tests with Playwright |
+| `pnpm storybook`       | Launch Storybook locally      |
+| `pnpm build-storybook` | Export static Storybook       |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧩 Technologies Used
 
-## Deploy on Vercel
+- **Next.js** 15
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **React** 19
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **TypeScript** 5
+
+- **Mantine UI** 7
+
+- **TailwindCSS** 4
+
+- **Vitest** + `@vitest/browser`
+
+- **Playwright**
+
+- **Storybook** 8
+
+- **ESLint** (Airbnb-style + accessibility + Playwright)
+
+- **PostCSS**
+
+- **Commitlint** + **cz-git**
+
+- **Husky**
+
+
+
+---
+
+
+
+## 🌍 Localization (i18n)
+
+Powered by `next-intl`. All messages are managed inside:
+
+```bash
+src/config/i18n/messages/{locale}.json
+```
+
+
+
+---
+
+## 🚀 Deployment
+
+You can deploy to any Vercel-compatible platform. Just make sure to set environment variables correctly via `.env`.
+
+
+
+---
+
+## 🧑‍💻 Author
+
+Made with ❤️ by [Seyed Mojtaba Shadab](https://www.shaadcode.ir)  
+📧 shaadcode@gmail.com  
+🔗 [GitHub](https://github.com/shaadcode)
+
+---
+
+## 📄 License
+
+[MIT](./LICENSE)

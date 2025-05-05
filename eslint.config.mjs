@@ -5,6 +5,10 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
 import testingLibrary from 'eslint-plugin-testing-library';
 
+const ignoreFiles = [
+  './README.md',
+  'migrations/**/*',
+];
 export default antfu(
   {
     react: true,
@@ -25,7 +29,7 @@ export default antfu(
     },
 
     // Ignored paths
-    ignores: ['migrations/**/*'],
+    ignores: ignoreFiles,
   },
   // --- Next.js Specific Rules ---
   {
@@ -61,5 +65,6 @@ export default antfu(
       'test/padding-around-all': 'error', // Add padding in test files
       'test/prefer-lowercase-title': 'off', // Allow using uppercase titles in test titles
     },
+
   },
 );
