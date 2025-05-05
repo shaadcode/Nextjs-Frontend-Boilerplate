@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.0.0...v1.1.0) (2025-05-05)
+
+
+### Features
+
+* **config:** adding the .env.example file ([56aa297](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/56aa2978c3bdd778ecc5692ef4b71ceb0c90ed7c))
+* **config:** basic axios configuration ([ba453f4](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ba453f4ed652fcf06af0b959fa8ea9d4cede361d))
+* **deps:** managing requests with Axios ([940547f](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/940547f5beb2b78f8015f8e6d033b89a3b43f4db))
+
 # 1.0.0 (2025-05-05)
 
 
