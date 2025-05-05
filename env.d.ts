@@ -5,6 +5,6 @@ declare namespace NodeJS {
     ANALYZE: 'true' | 'false';
     CI: boolean;
     PORT: number;
-    NEXT_PUBLIC_SITE_URL: string;
+    NEXT_PUBLIC_BASE_API_URL: string;
   }
 }
