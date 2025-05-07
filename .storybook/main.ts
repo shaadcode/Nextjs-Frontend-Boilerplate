@@ -9,16 +9,12 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@chromatic-com/storybook',
-    '@storybook/experimental-addon-test',
     '@storybook/addon-styling-webpack',
     'storybook-dark-mode',
   ],
-  framework: {
-    name: '@storybook/experimental-nextjs-vite',
-    options: {},
-  },
   staticDirs: [
     '..\\public',
   ],
+  framework: '@storybook/nextjs',
 };
 export default config;
