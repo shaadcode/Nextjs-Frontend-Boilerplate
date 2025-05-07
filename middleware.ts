@@ -3,19 +3,16 @@ import createMiddleware from 'next-intl/middleware';
 import { NextResponse } from 'next/server';
 
 const getDefaultLocale = (request: NextRequest): 'en' | 'de' => {
-  // تشخیص بر اساس cookie
   const cookieLocale = request.cookies.get('locale')?.value;
   if (cookieLocale && ['en', 'de'].includes(cookieLocale)) {
     return cookieLocale as 'en' | 'de';
   }
 
-  // تشخیص بر اساس هدر Accept-Language
   const acceptLanguage = request.headers.get('accept-language');
   if (acceptLanguage?.includes('de')) {
     return 'de';
   }
 
-  // پیش‌فرض
   return 'en';
 };
 
