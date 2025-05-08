@@ -1,3 +1,22 @@
+# [1.2.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.1.0...v1.2.0) (2025-05-08)
+
+
+### Bug Fixes
+
+* **config:** configuring storybook for next.js ([2ca52b1](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/2ca52b186a2e1c9b15fc85752b825d394ba73a08))
+* **config:** fix the problem of not finding the Next-Intl configuration ([4a0ad32](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/4a0ad32b9c7b9b01eab7191cc25817be6179ed2a))
+* **config:** fix the problem of vitest not running ([86af2df](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/86af2df870d1618007944837c41b56547451d97a))
+* **config:** redirect root path to default locale using middleware ([9c04d34](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/9c04d34dafe2b996ecf6ac7c9cffa21632d3ff60))
+* **config:** resolve incorrect Mantine theme that caused white UI ([9c0d240](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/9c0d240c1dc529ff229f1926b3fde164a1390ff8))
+
+
+### Features
+
+* **config:** basic T3 env config ([d5cc809](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/d5cc8099f56f5ef2c05e763679a759f65e30d81a))
+* **config:** using the Link Next-Intl component in Mantine ([7d2487f](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/7d2487f949cf2ec6318a8d24b92e7e5ea3d34b80))
+* **deps:** add devtools for tanstack query ([ad67cad](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ad67cad4dbf8fd3038229077766b8b6705b29e0f))
+* **deps:** installing new dependencies ([b78fd0a](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/b78fd0ac7d4ee0fd3b5a79b83d0f02d2801dfda5))
+
 # [1.1.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.0.0...v1.1.0) (2025-05-05)
 
 
