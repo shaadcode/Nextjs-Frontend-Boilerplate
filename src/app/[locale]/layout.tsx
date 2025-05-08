@@ -4,7 +4,7 @@ import { montserrat } from '@/config/font';
 import routing from '@/config/i18n/routing';
 import { cssVariablesResolver, theme } from '@/config/mantine';
 import { DirectionProvider, mantineHtmlProps, MantineProvider } from '@mantine/core';
-import { hasLocale } from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import '@mantine/core/styles.css';
 import './../globals.css';
@@ -33,9 +33,9 @@ export default async function RootLayout({
             cssVariablesResolver={cssVariablesResolver}
             theme={theme}
           >
-            {/* <NextIntlClientProvider> */}
-            {children}
-            {/* </NextIntlClientProvider> */}
+            <NextIntlClientProvider>
+              {children}
+            </NextIntlClientProvider>
           </MantineProvider>
         </DirectionProvider>
       </body>

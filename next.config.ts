@@ -12,6 +12,6 @@ const nextConfig: NextConfig = {
   },
 
 };
-const withNextIntl = createNextIntlPlugin('./src/config/i18n/routing.ts');
+const withNextIntl = createNextIntlPlugin('./src/config/i18n/request.ts');
 
 export default bundleAnalyzer(withNextIntl(nextConfig));
