@@ -1,6 +1,7 @@
 'use client';
 import type { ContainerProps, CSSVariablesResolver, MantineColorsTuple, MantineTheme } from '@mantine/core';
 import { montserrat } from '@/config/font';
+import { Link as NextIntlLink } from '@/config/i18n/navigation';
 import {
   colorsTuple,
 
@@ -9,9 +10,8 @@ import {
   DEFAULT_THEME,
   rem,
 } from '@mantine/core';
-import NextImage from 'next/image';
 
-import NextLink from 'next/link';
+import NextImage from 'next/image';
 
 export const primary: MantineColorsTuple = colorsTuple('#fff');
 export const secondary: MantineColorsTuple = colorsTuple('#fff');
@@ -31,17 +31,12 @@ export const theme = createTheme({
   components: {
     NavLink: {
       defaultProps: {
-        component: NextLink,
-      },
-    },
-    Link: {
-      defaultProps: {
-        component: NextLink,
+        component: NextIntlLink,
       },
     },
     Anchor: {
       defaultProps: {
-        component: NextLink,
+        component: NextIntlLink,
       },
     },
     Container: {
