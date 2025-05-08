@@ -1,5 +1,5 @@
 'use client';
-import type { ContainerProps, CSSVariablesResolver, MantineColorsTuple, MantineTheme } from '@mantine/core';
+import type { ContainerProps, CSSVariablesResolver, MantineTheme } from '@mantine/core';
 import { montserrat } from '@/config/font';
 import { Link as NextIntlLink } from '@/config/i18n/navigation';
 import {
@@ -13,9 +13,9 @@ import {
 
 import NextImage from 'next/image';
 
-export const primary: MantineColorsTuple = colorsTuple('#fff');
-export const secondary: MantineColorsTuple = colorsTuple('#fff');
-export const accent: MantineColorsTuple = colorsTuple('#fff');
+// export const primary: MantineColorsTuple = colorsTuple('#fff');
+// export const secondary: MantineColorsTuple = colorsTuple('#fff');
+// export const accent: MantineColorsTuple = colorsTuple('#fff');
 
 const CONTAINER_SIZES: Record<string, string> = {
   'xs': '320px',
@@ -102,9 +102,9 @@ export const theme = createTheme({
     '3xl': '50px',
     '4xl': '65px',
   },
-  primaryColor: 'primary',
+  // primaryColor: 'primary',
   colors: {
-    primary,
+    // primary,
     lightBlack: colorsTuple('#242424'),
   },
   black: '#242424',
