@@ -4,6 +4,7 @@ import { montserrat } from '@/config/font';
 import routing from '@/config/i18n/routing';
 import { cssVariablesResolver, theme } from '@/config/mantine';
 import { DirectionProvider, mantineHtmlProps, MantineProvider } from '@mantine/core';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import '@mantine/core/styles.css';
@@ -39,6 +40,10 @@ export default async function RootLayout({
           </MantineProvider>
         </DirectionProvider>
       </body>
+
+      {/* google analytics config */}
+      <GoogleAnalytics gaId="G-XYZ" />
+
     </html>
   );
 }
