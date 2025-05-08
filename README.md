@@ -40,7 +40,7 @@
 
 - ♻️ **ts-reset** to enhance the TypeScript standard library
 
-- 🧩 **nextjs-tyirdparty** for simplified third-party integrations
+- 🧩 **nextjs-third-parties** for simplified third-party integrations
 
 ---
 
