@@ -46,6 +46,8 @@
 
 - 🧩 **nextjs-third-parties** for simplified third-party integrations
 
+- 🌐 Axios for powerful and flexible HTTP requests
+
 ---
 
 ## 🛠️ Getting Started
