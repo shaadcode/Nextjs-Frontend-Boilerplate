@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/Nextjs-Front-End-Boilerplate.png" alt="Project Cover" />
+</p>
+
 # 🚀 Next.js Frontend Boilerplate
 
 > A modern, batteries-included Next.js 15 frontend boilerplate designed for rapid development and scalable applications.
