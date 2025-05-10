@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.2.0...v1.3.0) (2025-05-10)
+
+
+### Features
+
+* **config:** add a robots.ts file to manage robots.txt files ([2f69a0c](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/2f69a0c73dc4a9571f9751c7c7b0657474689148))
+* **config:** add global-error file to the root of the application ([ce6d4d7](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ce6d4d725c8f696e510325ed245b51b190a78aa8))
+* **config:** adding a sitemap.ts file to manage sitemap.xml ([35659aa](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/35659aae95e1801fc977cd682ae36a370a77a36d))
+
 # [1.2.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.1.0...v1.2.0) (2025-05-08)
 
 
