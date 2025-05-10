@@ -6,6 +6,7 @@ declare namespace NodeJS {
     CI: boolean;
     PORT: number;
     NEXT_PUBLIC_BASE_API_URL: string;
+    NEXT_PUBLIC_APP_URL: string;
 
     SKIP_ENV_VALIDATION: 'true' | 'false' | undefined;
   }

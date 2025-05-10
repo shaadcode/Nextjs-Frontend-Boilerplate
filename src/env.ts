@@ -12,6 +12,7 @@ export const env = createEnv({
   },
   client: {
     NEXT_PUBLIC_BASE_API_URL: z.string().url(),
+    NEXT_PUBLIC_APP_URL: z.string().url(),
   },
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
@@ -19,6 +20,7 @@ export const env = createEnv({
     ANALYZE: process.env.ANALYZE,
     CI: process.env.CI,
     NEXT_PUBLIC_BASE_API_URL: process.env.NEXT_PUBLIC_BASE_API_URL,
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
   skipValidation: process.env.SKIP_ENV_VALIDATION === 'true',
 });
