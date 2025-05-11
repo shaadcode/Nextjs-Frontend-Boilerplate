@@ -4,6 +4,7 @@ import jestDom from 'eslint-plugin-jest-dom';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
 import testingLibrary from 'eslint-plugin-testing-library';
+
 const ignoreFiles = [
   './README.md',
   'migrations/**/*',
