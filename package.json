@@ -37,6 +37,7 @@
     "build-storybook": "storybook build",
     "deploy:simple": "pnpm build && git push",
     "deploy:strict": "pnpm check-types && pnpm lint && pnpm test && pnpm build && git push",
+    "new-feature": "node ./cli/createNewFeature/index.js",
     "prepare": "husky"
   },
   "dependencies": {
@@ -59,6 +60,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
     "@chromatic-com/storybook": "^3.2.6",
+    "@clack/prompts": "^0.10.1",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@faker-js/faker": "^9.7.0",
@@ -72,6 +74,7 @@
     "@storybook/experimental-nextjs-vite": "8.6.12",
     "@storybook/nextjs": "^8.6.12",
     "@storybook/preview-api": "^8.6.12",
+    "@storybook/react": "^8.6.12",
     "@tailwindcss/postcss": "^4",
     "@tanstack/react-query-devtools": "^5.75.5",
     "@testing-library/dom": "^10.4.0",
@@ -96,6 +99,7 @@
     "lint-staged": "^15.5.1",
     "only-allow": "^1.2.1",
     "open": "^10.1.2",
+    "picocolors": "^1.1.1",
     "playwright": "^1.52.0",
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "^1.17.0",
