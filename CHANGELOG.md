@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.1...v1.4.2) (2025-05-11)
+
+
+### Bug Fixes
+
+* **config:** fixed a bug where build next.js failed in CI workflow ([ded2dc4](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ded2dc4377a91ea62827d4c4fce1dc3910db362b))
+
 ## [1.4.1](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.0...v1.4.1) (2025-05-11)
 
 
