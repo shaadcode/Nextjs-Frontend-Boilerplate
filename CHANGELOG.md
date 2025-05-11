@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.2...v1.5.0) (2025-05-11)
+
+
+### Features
+
+* **config:** increasing output security in CI workflow ([3fb32db](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/3fb32db6b84fa348b6b9f6ba5a64ebfda6c37a6f))
+
 ## [1.4.2](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.1...v1.4.2) (2025-05-11)
 
 
