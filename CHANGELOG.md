@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.0...v1.4.1) (2025-05-11)
+
+
+### Bug Fixes
+
+* **config:** fix CI workflow not running error in production environment ([7c8db93](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/7c8db937945ed843d76887710ec03c81faaa5935))
+
 # [1.4.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.3.0...v1.4.0) (2025-05-11)
 
 
