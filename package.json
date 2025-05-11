@@ -17,9 +17,7 @@
     "yarn": "please-use-pnpm"
   },
   "scripts": {
-    "dev": "pnpm open-browser:win && next dev --turbopack -p 3000",
-    "open-browser:linux": "open http://localhost:3000",
-    "open-browser:win": "start http://localhost:3000",
+    "dev": "next dev --turbopack -p 3000",
     "build": "next build",
     "build:safe": "pnpm check-types && next build",
     "build:analyze": "ANALYZE=true pnpm build",
@@ -98,7 +96,6 @@
     "jsdom": "^26.1.0",
     "lint-staged": "^15.5.1",
     "only-allow": "^1.2.1",
-    "open": "^10.1.2",
     "picocolors": "^1.1.1",
     "playwright": "^1.52.0",
     "postcss": "^8.5.3",
