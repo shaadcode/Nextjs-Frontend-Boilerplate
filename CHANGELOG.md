@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.3.0...v1.4.0) (2025-05-11)
+
+
+### Bug Fixes
+
+* **config:** remove deprecated npm configurations ([a940d57](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/a940d578a8b4519150afb199b401fef82a5350b5))
+
+
+### Features
+
+* automatically generate files when creating a new feature with the CLI ([1ea84fd](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/1ea84fd3361aee63ea5da433b5eaebc987bb8de5))
+* **config:** added `eslint-plugin-format` plugin for eslint ([c244063](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/c244063d0cc1a2cba6c65f32dc2e01126adc59d2))
+* **config:** added recommended vscode plugins ([ed5bdb9](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ed5bdb966be8d23f5aa50d10a084f5bef9869ee5))
+* **config:** adding scripts for project deployment ([ff5cfd5](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ff5cfd5ca491db8ca6c156808fc0e2477b44a895))
+
 # [1.3.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.2.0...v1.3.0) (2025-05-10)
 
 
