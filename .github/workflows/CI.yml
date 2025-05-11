@@ -13,6 +13,9 @@ jobs:
 
     name: Build with ${{ matrix.node-version }}
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_API_URL: ${{ vars.NEXT_PUBLIC_BASE_API_URL }}
+      NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
 
     steps:
       - uses: actions/checkout@v4
