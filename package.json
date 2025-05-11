@@ -35,6 +35,8 @@
     "precommit": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "deploy:simple": "pnpm build && git push",
+    "deploy:strict": "pnpm check-types && pnpm lint && pnpm test && pnpm build && git push",
     "prepare": "husky"
   },
   "dependencies": {
