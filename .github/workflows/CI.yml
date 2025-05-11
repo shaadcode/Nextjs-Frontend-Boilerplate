@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    environment: production
     strategy:
       matrix:
         node-version: [20.x, 22.x]
