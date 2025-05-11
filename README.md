@@ -48,6 +48,8 @@
 
 - 🌐 Axios for powerful and flexible HTTP requests
 
+- 📁 **Automatic generation of folders and files** when creating a new feature with the cli
+
 ---
 
 ## 🛠️ Getting Started
