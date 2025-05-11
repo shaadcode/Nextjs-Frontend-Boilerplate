@@ -66,8 +66,15 @@ To be able to use GitHub actions for CI workflow, you need to create an environm
 ```bash
 your repo > Settings > Secrets and variables > Actions > Variables(tab) > Manage environment variables > New environment
 ```
-In CI workflow, the name assigned to the environment is `production` by default. If you want to change the name of the environment to your liking, use the name you specified when creating the environment in GitHub. To change the name of the environment locally, go to `.github\workflows\CI.yml` and change the name of the environment
+In CI workflow, the name assigned to the environment is `production` by default. If you want to change the name of the environment to your liking, use the name you specified when creating the environment in GitHub. To change the name of the environment locally, go to `.github\workflows\CI.yml` and change the name of the environment.
 
+Also, check that your variable names match in the `.github\workflows\CI.yml` file:
+
+```yaml
+  env:
+    NEXT_PUBLIC_BASE_API_URL: ${{ vars.NEXT_PUBLIC_BASE_API_URL }}
+    NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
+```
 
 ### 🔧 Installation
 
@@ -80,8 +87,6 @@ pnpm install
 ```bash
 pnpm dev
 ```
-
-This opens `http://localhost:3000` automatically.
 
 ### Creating a new feature for the website
 

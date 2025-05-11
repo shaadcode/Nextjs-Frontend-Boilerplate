@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -16,7 +18,6 @@ jobs:
     env:
       NEXT_PUBLIC_BASE_API_URL: ${{ vars.NEXT_PUBLIC_BASE_API_URL }}
       NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
-
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm
@@ -29,5 +30,20 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm check-types
-      - run: pnpm build
+      - name: Run type checking
+        run: pnpm check-types
+
+      - name: Run lint
+        run: pnpm lint
+
+      - name: Run unit tests
+        run: pnpm test
+
+      - name: Run E2E tests (Playwright)
+        env:
+          CI: true
+          NODE_ENV: test
+        run: npx playwright test
+
+      - name: Build project
+        run: pnpm build
