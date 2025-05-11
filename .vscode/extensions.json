@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "PKief.material-icon-theme",
+    "ms-playwright.playwright",
+    "vunguyentuan.vscode-postcss",
+    "YoavBls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "vitest.explorer",
+    "mikestead.dotenv",
+    "lokalise.i18n-ally",
+    "vunguyentuan.vscode-css-variables",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "ms-vscode.vscode-typescript-next",
+    "streetsidesoftware.code-spell-checker",
+    "SeanGilbertson.auto-collapse-folders"
+  ]
+}
