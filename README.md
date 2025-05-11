@@ -59,6 +59,16 @@
 - **Node.js** ≥ 20
 - **pnpm** = 10.10.0
 
+### 🤖 Setting up GitHub actions
+
+To be able to use GitHub actions for CI workflow, you need to create an environment in your GitHub repository. You can use the following path:
+
+```bash
+your repo > Settings > Secrets and variables > Actions > Variables(tab) > Manage environment variables > New environment
+```
+In CI workflow, the name assigned to the environment is `production` by default. If you want to change the name of the environment to your liking, use the name you specified when creating the environment in GitHub. To change the name of the environment locally, go to `.github\workflows\CI.yml` and change the name of the environment
+
+
 ### 🔧 Installation
 
 ```bash
@@ -72,6 +82,14 @@ pnpm dev
 ```
 
 This opens `http://localhost:3000` automatically.
+
+### Creating a new feature for the website
+
+Instead of manually creating the files and folders needed for a new feature, you can use our CLI tool. Just specify the name of the feature, then select the files and folders you need. Everything will be generated automatically.
+
+```bash
+pnpm new-feature
+```
 
 ## 🧪 Scripts
 
