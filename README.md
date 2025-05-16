@@ -2,7 +2,7 @@
   <img src="./assets/Nextjs-Front-End-Boilerplate.png" alt="Project Cover" />
 </p>
 
-# 🚀 Next.js Frontend Boilerplate
+# # 🚀 Next.js Frontend Boilerplate
 
 > A modern, batteries-included Next.js 15 frontend boilerplate designed for rapid development and scalable applications.
 
@@ -10,7 +10,7 @@
 
 ## 🎯 Features
 
-- ⚡ **Next.js 15** with **Turbopack** support
+- ⚡ **Next.js 15** with **Turbopack** support and using **App Router**
 
 - 🎨 UI powered by **Mantine v8**
 
@@ -46,7 +46,7 @@
 
 - 🧩 **nextjs-third-parties** for simplified third-party integrations
 
-- 🌐 Axios for powerful and flexible HTTP requests
+- 🌐 **Axios** for powerful and flexible HTTP requests
 
 - 📁 **Automatic generation of folders and files** when creating a new feature with the cli
 
@@ -56,27 +56,47 @@
 
 ### 📦 Requirements
 
+First, check the following prerequisites. To check the node version, use the `node -v` command in your CMD, and to check the pnpm version, use the `pnpm -v` command.
+
 - **Node.js** ≥ 20
+
 - **pnpm** = 10.10.0
 
-### 🤖 Setting up GitHub actions
+📍 tip: **My personal recommendation is to use fnm as node manager**
+
+1. **Cloning a project**
+
+```bash
+git clone https://github.com/your-repo/your-project.git
+
+cd your-project
+```
+
+2. **🤖 Setting up GitHub actions**
 
 To be able to use GitHub actions for CI workflow, you need to create an environment in your GitHub repository. You can use the following path:
 
 ```bash
 your repo > Settings > Secrets and variables > Actions > Variables(tab) > Manage environment variables > New environment
 ```
+
 In CI workflow, the name assigned to the environment is `production` by default. If you want to change the name of the environment to your liking, use the name you specified when creating the environment in GitHub. To change the name of the environment locally, go to `.github\workflows\CI.yml` and change the name of the environment.
 
 Also, check that your variable names match in the `.github\workflows\CI.yml` file:
 
 ```yaml
-  env:
-    NEXT_PUBLIC_BASE_API_URL: ${{ vars.NEXT_PUBLIC_BASE_API_URL }}
-    NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
+  env:
+
+    NEXT_PUBLIC_BASE_API_URL: ${{ vars.NEXT_PUBLIC_BASE_API_URL }}
+
+    NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
 ```
 
-### 🔧 Installation
+3. **Setting environment variables**
+
+Make a copy of the .env.example file and set the required variables.
+
+4. 🔧 Installation
 
 ```bash
 pnpm install
@@ -88,6 +108,12 @@ pnpm install
 pnpm dev
 ```
 
+---
+
+## 🛠️ Using capabilities in the project
+
+My boilerplate has built-in capabilities that are either completely independent or are a combination of existing libraries. These capabilities can be very useful and speed up development several times.
+
 ### Creating a new feature for the website
 
 Instead of manually creating the files and folders needed for a new feature, you can use our CLI tool. Just specify the name of the feature, then select the files and folders you need. Everything will be generated automatically.
@@ -96,17 +122,38 @@ Instead of manually creating the files and folders needed for a new feature, you
 pnpm new-feature
 ```
 
-## 🧪 Scripts
+By running this command, first enter the name of the feature. Then select the files and folders you want to create. To select or deselect, use the `Space` key in the browser.
 
-| Command                | Description                   |
-| ---------------------- | ----------------------------- |
-| `pnpm dev`             | Start dev server (Turbopack)  |
-| `pnpm build`           | Build for production          |
-| `pnpm lint`            | Run ESLint                    |
-| `pnpm test`            | Run unit tests via Vitest     |
-| `pnpm test:e2e`        | Run E2E tests with Playwright |
-| `pnpm storybook`       | Launch Storybook locally      |
-| `pnpm build-storybook` | Export static Storybook       |
+Each folder may contain a required file, and each file (in the root of the feature folder or in any subfolder) may contain the code required for minimal development.
+
+
+
+### Manage all site paths
+
+Inside the `src/config/routes.ts` file you can manage all your routes. This includes site pages and api routes.
+
+
+
+### 🧪 Scripts
+
+Below are some useful scripts that can help with project development:
+
+| Command                | Description                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `pnpm dev`             | Runs the development server on port 3000                                                                                     |
+| `pnpm build:safe`      | Checks for typos before building                                                                                             |
+| `pnpm build`           | Build for production                                                                                                         |
+| `pnpm lint`            | Checks code against eslint rules                                                                                             |
+| `pnpm lint:fix`        | Fixes problems on the fly in addition to what `lint` does                                                                    |
+| `pnpm check-types`     | Checks for typescript errors                                                                                                 |
+| `pnpm test`            | Running vitest tests                                                                                                         |
+| `pnpm test:watch`      | Real-time execution and review of vitest tests                                                                               |
+| `pnpm test:e2e`        | Run E2E tests with Playwright                                                                                                |
+| `pnpm deploy:simple`   | Builds once before pushing the project to your GitHub repository                                                             |
+| `pnpm deploy:strict`   | Checks types, eslint rules, and test results before pushing the code to the GitHub repository, and then builds (recommended) |
+| `pnpm build-storybook` | Export static Storybook                                                                                                      |
+
+
 
 ---
 
@@ -117,6 +164,28 @@ Powered by `next-intl`. All messages are managed inside:
 ```bash
 src/config/i18n/messages/{locale}.json
 ```
+
+### Add translation (i18n)
+
+1. Create a new translation file in the path `src/config/i18n/messages/{langKey}.json`. Note that you must replace `langKey` with your desired language key.
+
+2. Add new text keys:
+   
+   ```json
+   {
+     "key": "text"
+   }
+   ```
+
+3. Use in component:
+   
+   ```jsx
+   const t = useTranslations();
+   return <Text>{t('key')}</Text>;
+   ```
+
+
+
 
 ---
 
@@ -129,7 +198,9 @@ You can deploy to any Vercel-compatible platform. Just make sure to set environm
 ## 🧑‍💻 Author
 
 Made with ❤️ by [Seyed Mojtaba Shadab](https://www.shaadcode.ir)
+
 📧 shaadcode@gmail.com
+
 🔗 [GitHub](https://github.com/shaadcode)
 
 ---
