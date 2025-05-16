@@ -2,8 +2,9 @@ import {
   MantineProvider,
   useMantineColorScheme,
 } from '@mantine/core';
-
 import { addons } from '@storybook/preview-api';
+
+import { NextIntlClientProvider } from 'next-intl';
 import React, { useEffect } from 'react';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 import { theme } from './../src/config/mantine';
@@ -11,6 +12,7 @@ import { theme } from './../src/config/mantine';
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
 
+const locale = 'en';
 const channel = addons.getChannel();
 
 function ColorSchemeWrapper({
@@ -30,11 +32,31 @@ function ColorSchemeWrapper({
   return <>{children}</>;
 }
 
+const loadMessages = (locale: string) => {
+  switch (locale) {
+    case 'fa':
+      // eslint-disable-next-line ts/no-require-imports
+      return require('@/config/i18n/messages/fa.json');
+    case 'en':
+    default:
+      // eslint-disable-next-line ts/no-require-imports
+      return require('@/config/i18n/messages/en.json');
+  }
+};
+
+const messages = loadMessages(locale);
+
 export const decorators = [
-  (renderStory: any) => (
-    <ColorSchemeWrapper>{renderStory()}</ColorSchemeWrapper>
+  (story: any) => (
+    <ColorSchemeWrapper>
+      {story()}
+    </ColorSchemeWrapper>
   ),
-  (renderStory: any) => (
-    <MantineProvider theme={theme}>{renderStory()}</MantineProvider>
+  (story: any) => (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <MantineProvider forceColorScheme="dark" theme={theme}>
+        {story()}
+      </MantineProvider>
+    </NextIntlClientProvider>
   ),
 ];
