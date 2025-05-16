@@ -22,7 +22,7 @@
   "testing.automaticallyOpenTestResults": "neverOpen", // Don't open the test results automatically
 
   // I18n
-  "i18n-ally.localesPaths": ["src/locales"],
+  "i18n-ally.localesPaths": ["src/config/i18n/messages"],
   "i18n-ally.keystyle": "nested",
 
   // Disable the default formatter, use ESLint instead
