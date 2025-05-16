@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
+import { mantineHtmlProps } from '@mantine/core';
+
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+
 import { montserrat } from '@/config/font';
 
 import routing from '@/config/i18n/routing';
 import Providers from '@/Providers';
-import { mantineHtmlProps } from '@mantine/core';
-
-import { GoogleAnalytics } from '@next/third-parties/google';
-
-import { hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
 import '@mantine/core/styles.css';
 import './../globals.css';
 

@@ -3,11 +3,13 @@ import nextPlugin from '@next/eslint-plugin-next';
 import jestDom from 'eslint-plugin-jest-dom';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
+import storybook from 'eslint-plugin-storybook';
 import testingLibrary from 'eslint-plugin-testing-library';
 
 const ignoreFiles = [
   './README.md',
   'migrations/**/*',
+  '!.storybook',
 ];
 export default antfu(
   {
@@ -44,6 +46,18 @@ export default antfu(
   },
   // --- Accessibility Rules ---
   jsxA11y.flatConfigs.recommended,
+  // --- Storybook Rules ---
+  ...storybook.configs['flat/recommended'],
+  {
+    // 👇 This should match the `stories` property in .storybook/main.js|ts
+    files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+    rules: {
+      // 👇 Enable this rule
+      'storybook/csf-component': 'error',
+      // 👇 Disable this rule
+      'storybook/default-exports': 'off',
+    },
+  },
   // --- Testing Rules ---
   {
     files: ['**/*.test.ts?(x)'],

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import { cssVariablesResolver, theme } from '@/config/mantine';
 import { DirectionProvider, MantineProvider } from '@mantine/core';
 import { NextIntlClientProvider } from 'next-intl';
+import { cssVariablesResolver, theme } from '@/config/mantine';
 
 const ServerProviders = ({ children }: { children: ReactNode }) => {
   return (
