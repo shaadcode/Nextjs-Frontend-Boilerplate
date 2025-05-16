@@ -30,7 +30,6 @@
     "preinstall": "only-allow pnpm",
     "check-types": "tsc --noEmit --pretty",
     "commit": "cz",
-    "precommit": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "deploy:simple": "pnpm build && git push",
