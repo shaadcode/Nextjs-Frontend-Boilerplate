@@ -1,3 +1,19 @@
+# [1.6.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.5.0...v1.6.0) (2025-05-16)
+
+
+### Bug Fixes
+
+* **deps:** fix the problem of Eslint not running ([fa49b9d](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/fa49b9dea323bb7b7779f68296b5a472a1ab80fe))
+
+
+### Features
+
+* **config:** add routes.ts file to manage site routes ([e5fa70d](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/e5fa70d15108bc9cf3e5f1e042755821105aef71))
+* **config:** adding eslint rules for storybook ([6ba7e7c](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/6ba7e7c56a7f57107bae23895e0de60272907adc))
+* **config:** enable TypeScript augmentation for Next-Intl ([a320051](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/a320051a8ebd9b98441f1bea901757141caffac5))
+* **config:** internationalization within Storybook ([1767b44](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/1767b446137996d188b32fccb171f84bd1884442))
+* **config:** next -Intl integration with vscode ([e490f6d](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/e490f6d5d0a1d27a2024f465398a22721097edf7))
+
 # [1.5.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.4.2...v1.5.0) (2025-05-11)
 
 
