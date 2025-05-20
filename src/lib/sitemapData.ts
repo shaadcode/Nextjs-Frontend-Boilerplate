@@ -1,4 +1,4 @@
-// Mocked data source – جایگزین با real CMS/db logic
+// You can fetch your data and put it in the following functions
 export async function getBlogSlugs(): Promise<string[]> {
   return ['how-to-code', 'nextjs-routing', 'seo-tips'];
 }
