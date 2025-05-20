@@ -10,15 +10,10 @@ export const apiClient = axios.create({
   withCredentials: true,
 });
 
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 1000;
-
 apiClient.interceptors.response.use(
   response => response,
   async (error: AxiosError) => {
-    const config = (error.config || {}) as AxiosError['config'] & {
-      retryCount: number;
-    };
+    const config = (error.config || {}) as AxiosError['config'];
     switch (error.status) {
       case 401:
 
@@ -28,17 +23,19 @@ apiClient.interceptors.response.use(
         break;
     }
 
-    if (!error.response || error.response.status >= 500) {
-      config.retryCount = config.retryCount || 0;
+    if (config?.retry?.enabled) {
+      config.retry.storeCount = config.retry.storeCount ?? 0;
+      const maxRetries = config.retry.maxCount ?? 3;
+      const retryDelay = config.retry.delay ?? 1000;
 
-      if (config.retryCount < MAX_RETRIES) {
-        config.retryCount += 1;
+      if ((!error.response || error.response.status >= 500) && config.retry.storeCount < maxRetries) {
+        config.retry.storeCount += 1;
 
-        const delay = RETRY_DELAY * 2 ** (config.retryCount - 1);
+        const delay = retryDelay * 2 ** (config.retry.storeCount - 1);
 
-        return new Promise(resolve =>
-          setTimeout(() => resolve(apiClient(config)), delay),
-        );
+        await new Promise(resolve => setTimeout(resolve, delay));
+
+        return apiClient(config);
       }
     }
 

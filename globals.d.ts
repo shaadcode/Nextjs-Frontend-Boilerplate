@@ -10,3 +10,30 @@ declare module 'next-intl' {
     Formats: typeof formats;
   };
 }
+
+declare module 'axios'{
+  // eslint-disable-next-line ts/consistent-type-definitions
+  export interface AxiosRequestConfig {
+    /**
+     * Managing retry in axios
+     */
+    retry?: {
+      /**
+       * Number of retries
+       */
+      maxCount?: number;
+      /**
+       * This value should always be zero
+       */
+      storeCount?: 0;
+      /**
+       * Delay time
+       */
+      delay?: number;
+      /**
+       * Enable or disable retry feature for axios
+       */
+      enabled?: boolean;
+    };
+  };
+}
