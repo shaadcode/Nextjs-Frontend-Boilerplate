@@ -79,6 +79,16 @@ export default antfu(
             importNames: ['default', 'Image'],
             message: 'Using next/image is prohibited. Use @mantine/core.',
           },
+          {
+            name: 'next/link',
+            importNames: ['default', 'Link'],
+            message: 'The use of next-intl links is prohibited. Use the `Anchor` component from @mantine/core.',
+          },
+          {
+            name: '@/config/i18n/navigation',
+            importNames: ['default', 'Link'],
+            message: 'The use of next-intl links is prohibited. Use the `Anchor` component from @mantine/core.',
+          },
         ],
       }],
       'antfu/no-top-level-await': 'off', // Allow top-level await

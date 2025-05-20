@@ -1,7 +1,8 @@
 /* eslint-disable ts/consistent-type-definitions */
-import type { ImageProps as MantineImageProps } from '@mantine/core';
+import type { AnchorProps as MantineAnchorProps, ImageProps as MantineImageProps } from '@mantine/core';
 import type { ImageProps as NextImageProps } from 'next/image';
 import type messages from '@/config/i18n/messages/en.json';
+import type { LinkProps as NextIntlLinkProps } from '@/config/i18n/navigation';
 import type formats from '@/config/i18n/request';
 import type routing from '@/config/i18n/routing';
 
@@ -41,4 +42,6 @@ declare module 'axios'{
 
 declare module '@mantine/core' {
   export interface ImageProps extends NextImageProps, MantineImageProps {}
+
+  export interface AnchorProps extends MantineAnchorProps, NextIntlLinkProps {}
 }

@@ -1,3 +1,4 @@
+import type { ComponentProps } from 'react';
 import { createNavigation } from 'next-intl/navigation';
 import routing from '@/config/i18n/routing';
 
@@ -5,3 +6,5 @@ import routing from '@/config/i18n/routing';
 // APIs that consider the routing configuration
 export const { Link, redirect, usePathname, useRouter, getPathname }
   = createNavigation(routing);
+
+export type LinkProps = ComponentProps<typeof Link>;
