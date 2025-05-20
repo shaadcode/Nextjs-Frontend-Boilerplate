@@ -2,9 +2,30 @@
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "search.exclude": {
-    "package-lock.json": true,
+    "pnpm-lock.yaml": true,
     "node_modules": true,
-    ".next": true
+    ".next": true,
+    "CHANGELOG.md": true,
+    ".gitignore": true,
+    "**.env.**": true,
+    ".node-version": true,
+    ".npmrc": true,
+    "LICENSE": true,
+    "commitlint.config.cjs": true,
+    "lint-staged.config.js": true,
+    "eslint.config.mjs": true,
+    "release.config.mjs": true,
+    "vitest.setup.mjs": true,
+    "env.d.ts": true,
+    "globals.d.ts": true,
+    "next-env.d.ts": true,
+    "next.config.ts": true,
+    "playwright.config.ts": true,
+    "reset.d.ts": true,
+    "vitest.config.ts": true,
+    "tsconfig.json": true,
+    "**/.vscode/**": true,
+    "cli/**": true
   },
 
   // TypeScript
