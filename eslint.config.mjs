@@ -72,7 +72,15 @@ export default antfu(
   // --- Custom Rule Overrides ---
   {
     rules: {
-
+      'no-restricted-imports': ['error', {
+        paths: [
+          {
+            name: 'next/image',
+            importNames: ['default', 'Image'],
+            message: 'Using next/image is prohibited. Use @mantine/core.',
+          },
+        ],
+      }],
       'antfu/no-top-level-await': 'off', // Allow top-level await
       'style/brace-style': ['error', '1tbs'], // Use the default brace style
       'ts/consistent-type-definitions': ['error', 'type'], // Use `type` instead of `interface`

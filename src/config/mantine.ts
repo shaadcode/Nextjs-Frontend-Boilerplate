@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-imports */
 'use client';
 import type { ContainerProps, CSSVariablesResolver, MantineTheme } from '@mantine/core';
 import {

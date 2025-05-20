@@ -1,9 +1,11 @@
+/* eslint-disable ts/consistent-type-definitions */
+import type { ImageProps as MantineImageProps } from '@mantine/core';
+import type { ImageProps as NextImageProps } from 'next/image';
 import type messages from '@/config/i18n/messages/en.json';
 import type formats from '@/config/i18n/request';
 import type routing from '@/config/i18n/routing';
 
 declare module 'next-intl' {
-  // eslint-disable-next-line ts/consistent-type-definitions
   export interface AppConfig {
     Locale: (typeof routing.locales)[number];
     Messages: typeof messages;
@@ -12,7 +14,6 @@ declare module 'next-intl' {
 }
 
 declare module 'axios'{
-  // eslint-disable-next-line ts/consistent-type-definitions
   export interface AxiosRequestConfig {
     /**
      * Managing retry in axios
@@ -36,4 +37,8 @@ declare module 'axios'{
       enabled?: boolean;
     };
   };
+}
+
+declare module '@mantine/core' {
+  export interface ImageProps extends NextImageProps, MantineImageProps {}
 }
