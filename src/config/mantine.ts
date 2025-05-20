@@ -1,7 +1,5 @@
 'use client';
 import type { ContainerProps, CSSVariablesResolver, MantineTheme } from '@mantine/core';
-import { montserrat } from '@/config/font';
-import { Link as NextIntlLink } from '@/config/i18n/navigation';
 import {
   colorsTuple,
 
@@ -10,8 +8,10 @@ import {
   DEFAULT_THEME,
   rem,
 } from '@mantine/core';
-
 import NextImage from 'next/image';
+import { montserrat } from '@/config/font';
+
+import { Link as NextIntlLink } from '@/config/i18n/navigation';
 
 // export const primary: MantineColorsTuple = colorsTuple('#fff');
 // export const secondary: MantineColorsTuple = colorsTuple('#fff');

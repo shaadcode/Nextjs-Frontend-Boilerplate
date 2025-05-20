@@ -1,13 +1,13 @@
 // You cannot use Next-Intl in this file
 
 'use client';
-import routing from '@/config/i18n/routing';
-
-import { theme } from '@/config/mantine';
 import { Button, Container, Group, MantineProvider, Paper, Stack, Text, Title } from '@mantine/core';
+
 import { IconAlertTriangle, IconHome } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import routing from '@/config/i18n/routing';
+import { theme } from '@/config/mantine';
 import '@mantine/core/styles.css';
 
 export default function GlobalError(props: {

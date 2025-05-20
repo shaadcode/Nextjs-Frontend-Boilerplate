@@ -1,14 +1,17 @@
-import { Anchor } from '@mantine/core';
+import { Button } from '@mantine/core';
 import { useTranslations } from 'next-intl';
 
 const Home = () => {
   const t = useTranslations('HomePage');
   return (
     <>
-      <Anchor href="/home" target="_blank">
+
+      <Button lang="fa">
         {t('title')}
-      </Anchor>
+      </Button>
+
     </>
+
   );
 };
 
