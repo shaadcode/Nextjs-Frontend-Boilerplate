@@ -1,3 +1,19 @@
+# [1.7.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.6.0...v1.7.0) (2025-05-20)
+
+
+### Features
+
+* **config:** adding autoRem functionality to postCSS ([292eab0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/292eab0d2b99d0d1744ea7d5d99b8545b7c019a5))
+* **config:** excluding files that do not play a direct role in the development process ([3d7f69a](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/3d7f69a136643f789da8b78fa398ba866b9c4af0))
+* **config:** integrating Image Next.js component with Mantine Image component ([461dd2a](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/461dd2ad9d42709e96054aed40c9b295b113c8b1))
+* **config:** integrating Link Next.js and Link Next-Intl components with Mantine's Anchor component ([6ee332b](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/6ee332b51bccf7ffd49fdfc3c04c3e52347cbccd))
+* **config:** mantine integration with vscode ([4d56f2a](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/4d56f2a76d1876bbd8902f7cbce5acdeb3406871))
+
+
+### Performance Improvements
+
+* **config:** adding retry customization in axios ([a5d5a51](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/a5d5a51dffe760377d706fb1f8a305887d5cae88))
+
 # [1.6.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.5.0...v1.6.0) (2025-05-16)
 
 
