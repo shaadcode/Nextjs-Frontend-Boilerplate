@@ -126,13 +126,9 @@ By running this command, first enter the name of the feature. Then select the fi
 
 Each folder may contain a required file, and each file (in the root of the feature folder or in any subfolder) may contain the code required for minimal development.
 
-
-
 ### Manage all site paths
 
 Inside the `src/config/routes.ts` file you can manage all your routes. This includes site pages and api routes.
-
-
 
 ### 🧪 Scripts
 
@@ -153,7 +149,31 @@ Below are some useful scripts that can help with project development:
 | `pnpm deploy:strict`   | Checks types, eslint rules, and test results before pushing the code to the GitHub repository, and then builds (recommended) |
 | `pnpm build-storybook` | Export static Storybook                                                                                                      |
 
+---
 
+## 📚 Things you need to know about libraries
+
+I have created configurations for each library that can improve the quality of the output, provide a better development experience, and be suitable for most projects.
+
+> Please note that these configs are personal. If you have any problems with the configuration, you will need to apply the changes manually
+
+### 🎨 Mantine UI
+
+- Integrating Link Next.js and Next-Intl components with Mantine components
+
+- Integrating Image Next.js component with Mantine Image component
+
+### 🌍 Next-Intl
+
+- typescript augmentation: Accurate typing for default language keys
+
+- vscode integration: Using the i18n Ally plugin (if you install this plugin)
+
+- storybook: Internationalization test within Storybook
+
+### 🌐 Axios
+
+- Built-in retry without a library
 
 ---
 
@@ -183,9 +203,6 @@ src/config/i18n/messages/{locale}.json
    const t = useTranslations();
    return <Text>{t('key')}</Text>;
    ```
-
-
-
 
 ---
 
