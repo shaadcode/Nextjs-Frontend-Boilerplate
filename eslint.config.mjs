@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config';
 import nextPlugin from '@next/eslint-plugin-next';
+import tanstackQuery from '@tanstack/eslint-plugin-query';
 import jestDom from 'eslint-plugin-jest-dom';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
@@ -48,6 +49,8 @@ export default antfu(
   jsxA11y.flatConfigs.recommended,
   // --- Storybook Rules ---
   ...storybook.configs['flat/recommended'],
+  // --- Tanstack Query Rules ---
+  ...tanstackQuery.configs['flat/recommended'],
   {
     // 👇 This should match the `stories` property in .storybook/main.js|ts
     files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
