@@ -2,7 +2,7 @@
   <img src="./assets/Nextjs-Front-End-Boilerplate.png" alt="Project Cover" />
 </p>
 
-# # 🚀 Next.js Frontend Boilerplate
+## 🚀 Next.js Frontend Boilerplate
 
 > A modern, batteries-included Next.js 15 frontend boilerplate designed for rapid development and scalable applications.
 
@@ -104,7 +104,7 @@ Make a copy of the .env.example file and set the required variables.
 pnpm install
 ```
 
-5. **🧩** **Installing plugins (optional)**
+5. **🧩** **Installing vscode extensions (optional)**
 
 > I strongly recommend installing all the suggested plugins to increase the quality and speed of development
 
