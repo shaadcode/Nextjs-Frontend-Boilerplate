@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "next dev --turbopack -p 3000",
     "build": "next build",
-    "build:safe": "pnpm check-types && next build",
+    "build:safe": "pnpm lint && pnpm check-types && next build",
     "build:analyze": "ANALYZE=true pnpm build",
     "start": "next start",
     "lint": "eslint .",
