@@ -28,7 +28,7 @@ export default function GlobalError(props: {
               <Stack gap="md" align="center">
                 <IconAlertTriangle size={48} color="red" />
                 <Title order={2}>
-                  An error has occurred
+                  {'An error has occurred\r'}
                 </Title>
                 <Text c="dimmed" ta="center">
                   {props.error.message || 'An unexpected error has occurred. Please try again or return home.'}
@@ -36,14 +36,14 @@ export default function GlobalError(props: {
 
                 <Group align="center" mt="md">
                   <Button variant="filled" color="red" onClick={() => props.reset()}>
-                    Retry
+                    {'Retry\r'}
                   </Button>
                   <Button
                     variant="outline"
                     leftSection={<IconHome size={18} />}
                     onClick={() => router.push('/')}
                   >
-                    Return Home
+                    {'Return Home\r'}
                   </Button>
                 </Group>
               </Stack>
