@@ -62,9 +62,11 @@ First, check the following prerequisites. To check the node version, use the `no
 
 - **pnpm** = 10.10.0
 
-📍 tip: **My personal recommendation is to use fnm as node manager**
+📍 tip: **Depending on your experience and needs, you can use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm)**
 
-1. **Cloning a project**
+
+
+1. **📥** **Cloning a project**
 
 ```bash
 git clone https://github.com/your-repo/your-project.git
@@ -92,15 +94,47 @@ Also, check that your variable names match in the `.github\workflows\CI.yml` fil
     NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
 ```
 
-3. **Setting environment variables**
+3. **🌱** **Setting environment variables**
 
 Make a copy of the .env.example file and set the required variables.
 
-4. 🔧 Installation
+4. 🔧 **Installation**
 
 ```bash
 pnpm install
 ```
+
+5. **🧩** **Installing plugins (optional)**
+
+> I strongly recommend installing all the suggested plugins to increase the quality and speed of development
+
+- 🧹 [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+- 🎨 [PKief.material-icon-theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+- 🎭 [ms-playwright.playwright](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+
+- 🧪 [vunguyentuan.vscode-postcss](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-postcss)
+
+- 💥 [YoavBls.pretty-ts-errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+
+- 💨 [bradlc.vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+- ⚗️ [vitest.explorer](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
+
+- 🔐 [mikestead.dotenv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+
+- 🌍 [lokalise.i18n-ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally)
+
+- 🧬 [vunguyentuan.vscode-css-variables](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-css-variables)
+
+- 🔁 [formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+- 🔚 [formulahendry.auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+- 📝 [streetsidesoftware.code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+- 📁 [SeanGilbertson.auto-collapse-folders](https://marketplace.visualstudio.com/items?itemName=SeanGilbertson.auto-collapse-folders)
 
 ### 🏁 Run the app (with Turbopack)
 
@@ -173,7 +207,25 @@ I have created configurations for each library that can improve the quality of t
 
 ### 🌐 Axios
 
-- Built-in retry without a library
+- Built-in retry without a library and merge with tanstack query
+
+### 🔁 Tanstack Query
+
+- Enabling devtool mode for better request review
+
+- Integrated with eslint
+
+### ⚡ Next.js
+
+-  Bundle analyzer enabled
+
+### 💻 VS Code
+
+- Configure Fira Code font to increase code readability (you must install [Fira Code](https://fonts.google.com/specimen/Fira+Code) font)
+
+- Integrated with Next.js, Mantine, Next-Intl, typescript, vitest, eslint
+
+- In the search section, ignoring files that do not have a direct impact on the development process
 
 ---
 
@@ -203,6 +255,72 @@ src/config/i18n/messages/{locale}.json
    const t = useTranslations();
    return <Text>{t('key')}</Text>;
    ```
+
+---
+
+### 📦 List of recommended extensions for VS Code
+
+> I strongly recommend installing all the suggested plugins to increase the quality and speed of development
+
+In order to improve the development experience, increase productivity and standardize the code, it is recommended to use the following extensions for the Visual Studio Code development environment:
+
+#### ✅ Code quality control
+
+1. **`dbaeumer.vscode-eslint`**
+   The official ESLint plugin to automatically check the quality of the codes based on the lint rules defined in the project.
+
+2. **`YoavBls.pretty-ts-errors`**
+   Displays TypeScript errors in a more readable, understandable and suitable for quick debugging.
+
+3. **`streetsidesoftware.code-spell-checker`**
+   Check the spelling of words in English texts in the code and reduce spelling errors in variables and descriptions.
+
+#### 🎨 Beautify and improve the development user interface
+
+5. **`PKief.material-icon-theme`**
+   A set of beautiful and diverse icons for files and folders in VS Code, suitable for increasing the readability of the project structure.
+
+6. **`bradlc.vscode-tailwindcss`**
+   Full support for Tailwind CSS including class autocompletion, color preview, and detection of spelling errors in classes.
+
+7. **`formulahendry.auto-rename-tag`**
+   Automatic update of the closing tag when changing the opening tag in HTML and JSX files.
+
+8. **`formulahendry.auto-close-tag`**
+   Automatic closing of tags immediately after writing the opening tag, to increase coding speed and reduce errors.
+
+### 🧪 Testing and Automation Tools
+
+9. **`vitest.explorer`**
+   A graphical interface for viewing and running unit tests using the Vitest framework.
+
+10. **`ms-playwright.playwright`**
+    The official Playwright plugin for managing End-to-End tests with the ability to run and debug in a graphical environment.
+
+#### 🎯 Developing and maintaining styles
+
+11. **`vunguyentuan.vscode-postcss`**
+    Supports PostCSS syntax and provides features such as autocompletion and code highlighting for PostCSS files.
+
+12. **`vunguyentuan.vscode-css-variables`**
+    Displays and autocompletions of defined CSS variables, suitable for developing design systems and custom themes.
+
+#### 🌍 Multilingual support
+
+13. **`lokalise.i18n-ally`**
+    A professional tool for managing translation files (i18n) with support for various formats such as `.json`, `.yaml`, and `.po`.
+
+### ⚙️ Project configuration and structure support
+
+14. **`mikestead.dotenv`**
+    Support for `.env` environment files with syntax highlighting for managing configuration variables.
+
+15. **`SeanGilbertson.auto-collapse-folders`**
+    Automatically closes unopened folders to focus more on the current project structure and reduce clutter in the file browser.
+
+
+
+This set of plugins can significantly help improve the development experience, reduce errors, and increase code quality. They are recommended for use in team projects, especially in TypeScript, React, and Tailwind environments.
 
 ---
 
