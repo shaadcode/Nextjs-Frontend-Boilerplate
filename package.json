@@ -17,7 +17,7 @@
     "yarn": "please-use-pnpm"
   },
   "scripts": {
-    "dev": "next dev --turbopack -p 3000",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev --turbopack -p 3000",
     "build": "next build",
     "build:safe": "pnpm lint && pnpm check-types && next build",
     "build:analyze": "ANALYZE=true pnpm build",
@@ -83,6 +83,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.4.1",
+    "cross-env": "^7.0.3",
     "cz-git": "^1.11.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
