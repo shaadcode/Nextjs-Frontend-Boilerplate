@@ -1,3 +1,20 @@
+# [1.8.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.7.0...v1.8.0) (2025-05-24)
+
+
+### Features
+
+* **config:** add restriction on not using regular strings in jsx ([7e5f0f8](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/7e5f0f8ca3cfae76cfd55184320d060002d6dee0))
+* **config:** added debug mode for vscode ([576ad79](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/576ad79c73e823ce76a60c3417f753cfe9af078e))
+* **config:** adding liniting to the build:safe script ([85e7c7a](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/85e7c7a358f76805880364b1fe4b3c5ba737e781))
+* **config:** integrate common configurations between tanstack query and axios ([4abc406](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/4abc4067f367dabd5275361b645681ff9aad6ea3))
+* **config:** integrating eslint with tanstack query ([3592c69](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/3592c69cec4ae8c75e50cb37d25689f470d1ff62))
+
+
+### Performance Improvements
+
+* **config:** improved vscode configuration ([d0b79a2](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/d0b79a2118d3fcefe2ba86192241bee12f15d612))
+* **config:** remove vscode-typescript-next plugin from recommended plugins section ([f39048e](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/f39048e28f0bef37a62001907a3f2d8ec61083c3))
+
 # [1.7.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.6.0...v1.7.0) (2025-05-20)
 
 
