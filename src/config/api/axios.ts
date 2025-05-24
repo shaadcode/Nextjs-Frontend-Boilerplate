@@ -1,5 +1,6 @@
 import type { AxiosError } from 'axios';
 import axios from 'axios';
+import { apiConfig } from '@/config/api';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_API_URL;
 
@@ -25,8 +26,8 @@ apiClient.interceptors.response.use(
 
     if (config?.retry?.enabled) {
       config.retry.storeCount = config.retry.storeCount ?? 0;
-      const maxRetries = config.retry.maxCount ?? 3;
-      const retryDelay = config.retry.delay ?? 1000;
+      const maxRetries = config.retry.maxCount ?? apiConfig.retry.maxCount;
+      const retryDelay = config.retry.delay ?? apiConfig.retry.delay;
 
       if ((!error.response || error.response.status >= 500) && config.retry.storeCount < maxRetries) {
         config.retry.storeCount += 1;
