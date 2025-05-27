@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <Center pt="lg">
-      <Button lang="fa">
+      <Button lang="fa" data-testid="homepage-main-button">
         {t('title')}
       </Button>
     </Center>

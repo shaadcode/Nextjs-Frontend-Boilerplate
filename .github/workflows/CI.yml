@@ -39,11 +39,11 @@ jobs:
       - name: Run unit tests
         run: pnpm test
 
+      - name: Build project
+        run: pnpm build
+
       - name: Run E2E tests (Playwright)
         env:
           CI: true
           NODE_ENV: test
         run: npx playwright test
-
-      - name: Build project
-        run: pnpm build
