@@ -20,7 +20,22 @@ export type MantineCustomContainerSizes = 'xs' |
 
 export type MantineCustomBreakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | (string & {});
 
-export type MantineCustomFontSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | (string & {});
+export type MantineCustomFontSize =
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | '5xl'
+  | '6xl'
+  | '7xl'
+  | '8xl'
+  | '9xl'
+  | (string & {});
+
 export type MantineCustomSpacing = | '2xs'
   | 'xs'
   | 'sm'
@@ -44,13 +59,32 @@ export type MantineCustomShadows =
   | 'inset';
 
 export type MantineCustomRadius =
-  | '2xs'
   | 'xs'
   | 'sm'
   | 'md'
   | 'lg'
   | 'xl'
-  | 'full';
+  | '2xl'
+  | '3xl'
+  | '4xl' | 'full'
+  | (string & {});
+
+export type MantineCustomLineHeight =
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | '5xl'
+  | '6xl'
+  | '7xl'
+  | '8xl'
+  | '9xl'
+  | (string & {});
+
 export type MantineCustomThemeColors = 'primary' | 'secondary' | DefaultMantineThemeColors;
 declare module 'next-intl' {
   export interface AppConfig {
@@ -115,6 +149,9 @@ declare module '@mantine/core' {
 
   export type MantineRadius = MantineCustomRadius | (string & {}) | number;
   export type MantineRadiusValues = Record<MantineCustomRadius, string>;
+
+  export type MantineLineHeight = MantineCustomLineHeight | (string & {}) | number;
+  export type MantineLineHeightValues = Record<MantineCustomLineHeight, string>;
 
   export type MantineThemeColors = MantineCustomThemeColors | DefaultMantineColor;
 

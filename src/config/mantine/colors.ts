@@ -14,16 +14,16 @@ export const primary: MantineColorsTuple = [
   '#a73c00',
 ];
 export const secondary: MantineColorsTuple = [
-  '#fff4e1',
-  '#ffe8cc',
-  '#fed09b',
-  '#fdb766',
-  '#fca13a',
-  '#fc931d',
-  '#fc8a08',
-  '#e17800',
-  '#c86a00',
-  '#af5a00',
+  '#effde7',
+  '#e1f8d4',
+  '#c3efab',
+  '#a2e67e',
+  '#87de58',
+  '#75d93f',
+  '#6bd731',
+  '#59be23',
+  '#4da91b',
+  '#3d920d',
 ];
 // export const accent: MantineColorsTuple = [];
 

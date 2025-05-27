@@ -64,8 +64,6 @@ First, check the following prerequisites. To check the node version, use the `no
 
 📍 tip: **Depending on your experience and needs, you can use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm)**
 
-
-
 1. **📥** **Cloning a project**
 
 ```bash
@@ -197,6 +195,8 @@ I have created configurations for each library that can improve the quality of t
 
 - Integrating Image Next.js component with Mantine Image component
 
+- Integrated with tailwindcss (beta)
+
 ### 🌍 Next-Intl
 
 - typescript augmentation: Accurate typing for default language keys
@@ -217,7 +217,7 @@ I have created configurations for each library that can improve the quality of t
 
 ### ⚡ Next.js
 
--  Bundle analyzer enabled
+- Bundle analyzer enabled
 
 ### 💻 VS Code
 
@@ -317,8 +317,6 @@ In order to improve the development experience, increase productivity and standa
 
 15. **`SeanGilbertson.auto-collapse-folders`**
     Automatically closes unopened folders to focus more on the current project structure and reduce clutter in the file browser.
-
-
 
 This set of plugins can significantly help improve the development experience, reduce errors, and increase code quality. They are recommended for use in team projects, especially in TypeScript, React, and Tailwind environments.
 

@@ -1,4 +1,4 @@
-import type { MantineCustomBreakpoint, MantineCustomContainerSizes, MantineCustomFontSize, MantineCustomRadius, MantineCustomShadows, MantineCustomSpacing } from 'globals';
+import type { MantineCustomBreakpoint, MantineCustomContainerSizes, MantineCustomFontSize, MantineCustomLineHeight, MantineCustomRadius, MantineCustomShadows, MantineCustomSpacing } from 'globals';
 import { rem } from '@mantine/core';
 
 export const containerSizes: Record<MantineCustomContainerSizes, string> = {
@@ -10,15 +10,6 @@ export const containerSizes: Record<MantineCustomContainerSizes, string> = {
   '2xl': rem(1440),
   '3xl': rem(1920),
   '4xl': rem(2560),
-};
-
-export const headingSizes: Record<`--mantine-h${1 | 2 | 3 | 4 | 5 | 6}-font-size`, string> = {
-  '--mantine-h1-font-size': rem(47.776),
-  '--mantine-h2-font-size': rem(39.808),
-  '--mantine-h3-font-size': rem(33.184),
-  '--mantine-h4-font-size': rem(27.648),
-  '--mantine-h5-font-size': rem(23.04),
-  '--mantine-h6-font-size': rem(19.2),
 };
 
 export const breakpoints: Record<MantineCustomBreakpoint, string> = {
@@ -41,6 +32,11 @@ export const fontSizes: Record<MantineCustomFontSize, string> = {
   '2xl': rem(28),
   '3xl': rem(32),
   '4xl': rem(36),
+  '5xl': rem(48),
+  '6xl': rem(60),
+  '7xl': rem(72),
+  '8xl': rem(96),
+  '9xl': rem(128),
 };
 
 export const spacing: Record<MantineCustomSpacing, string> = {
@@ -70,11 +66,29 @@ export const shadows: Record<MantineCustomShadows, string> = {
 };
 
 export const radius: Record<MantineCustomRadius, string> = {
-  '2xs': rem(2),
-  'xs': rem(4),
-  'sm': rem(8),
-  'md': rem(16),
-  'lg': rem(32),
-  'xl': rem(48),
+  'xs': rem(2),
+  'sm': rem(4),
+  'md': rem(6),
+  'lg': rem(8),
+  'xl': rem(12),
+  '2xl': rem(16),
+  '3xl': rem(24),
+  '4xl': rem(32),
   'full': rem(9999),
+};
+
+export const lineHeights: Record<MantineCustomLineHeight, string> = {
+  'xs': '1.2',
+  'sm': '1.3',
+  'md': '1.4',
+  'lg': '1.5',
+  'xl': '1.6',
+  '2xl': '1.7',
+  '3xl': '1.8',
+  '4xl': '2',
+  '5xl': '2.2',
+  '6xl': '2.4',
+  '7xl': '2.6',
+  '8xl': '2.8',
+  '9xl': '3',
 };
