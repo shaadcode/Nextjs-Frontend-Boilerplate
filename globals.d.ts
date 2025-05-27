@@ -1,5 +1,5 @@
 /* eslint-disable ts/consistent-type-definitions */
-import type { AnchorProps as MantineAnchorProps, ImageProps as MantineImageProps } from '@mantine/core';
+import type { DefaultMantineColor, MantineThemeColors as DefaultMantineThemeColors, AnchorProps as MantineAnchorProps, ImageProps as MantineImageProps, StyleProp } from '@mantine/core';
 
 import type { ImageProps as NextImageProps } from 'next/image';
 import type messages from '@/config/i18n/messages/en.json';
@@ -18,6 +18,40 @@ export type MantineCustomContainerSizes = 'xs' |
   '3xl' |
   '4xl';
 
+export type MantineCustomBreakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | (string & {});
+
+export type MantineCustomFontSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | (string & {});
+export type MantineCustomSpacing = | '2xs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | '5xl';
+export type MantineCustomShadows =
+  | '2xs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | '2xl'
+  | '3xl'
+  | '4xl'
+  | 'inset';
+
+export type MantineCustomRadius =
+  | '2xs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'full';
+export type MantineCustomThemeColors = 'primary' | 'secondary' | DefaultMantineThemeColors;
 declare module 'next-intl' {
   export interface AppConfig {
     Locale: (typeof routing.locales)[number];
@@ -62,4 +96,26 @@ declare module '@mantine/core' {
     size?: MantineCustomContainerSizes | (string & {}) | number;
 
   };
+
+  export interface TextProps {
+    fz?: StyleProp<MantineCustomFontSize | `h${1 | 2 | 3 | 4 | 5 | 6}` | number | (string & {})>;
+  }
+
+  export interface TitleProps {
+    fz?: StyleProp<MantineCustomFontSize | `h${1 | 2 | 3 | 4 | 5 | 6}` | number | (string & {})>;
+  }
+
+  export type MantineBreakpointsValues = Record<MantineCustomBreakpoint, string>;
+  export type MantineFontSizesValues = Record<MantineCustomFontSize, string>;
+  export type MantineSpacing = MantineCustomSpacing;
+  export type MantineSpacingValues = Record<MantineSpacing, string>;
+
+  export type MantineShadow = MantineCustomShadows | (string & {}) | number;
+  export type MantineShadowsValues = Record<MantineShadows, string>;
+
+  export type MantineRadius = MantineCustomRadius | (string & {}) | number;
+  export type MantineRadiusValues = Record<MantineCustomRadius, string>;
+
+  export type MantineThemeColors = MantineCustomThemeColors | DefaultMantineColor;
+
 }

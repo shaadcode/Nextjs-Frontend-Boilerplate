@@ -7,7 +7,7 @@ import { IconAlertTriangle, IconHome } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import routing from '@/config/i18n/routing';
-import { theme } from '@/config/mantine';
+import { theme } from '@/config/mantine/mantine';
 import '@mantine/core/styles.css';
 
 export default function GlobalError(props: {

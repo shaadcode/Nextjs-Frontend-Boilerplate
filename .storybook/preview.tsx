@@ -7,7 +7,7 @@ import { addons } from '@storybook/preview-api';
 import { NextIntlClientProvider } from 'next-intl';
 import React, { useEffect } from 'react';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
-import { theme } from './../src/config/mantine';
+import { theme } from '../src/config/mantine/mantine';
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
