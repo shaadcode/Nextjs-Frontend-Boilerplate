@@ -155,4 +155,6 @@ declare module '@mantine/core' {
 
   export type MantineThemeColors = MantineCustomThemeColors | DefaultMantineColor;
 
+  export type MantineColor = keyof MantineThemeColors | 'transparent';
+
 }
