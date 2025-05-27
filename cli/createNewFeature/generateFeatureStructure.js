@@ -61,7 +61,7 @@ export async function generateFeatureStructure(
         folderName: capitalized(featureName),
         files: [{
           name: `${capitalized(featureName)}.tsx`,
-          content: `import { Box } from '@mantine/core';\n\ntype Props = {\n  prop: any;\n};\n\nconst ${capitalized(featureName)} = ({ prop }: Props) => {\n  return (\n    <Box>${capitalized(featureName)}</Box>\n  );\n};\n\nexport default ${capitalized(featureName)};\n`,
+          content: `import { Box } from '@mantine/core';\n\ntype Props = {\n  prop: any;\n};\n\nconst ${capitalized(featureName)} = ({ prop }: Props) => {\n  return (\n    <Box>{'${capitalized(featureName)}'}</Box>\n  );\n};\n\nexport default ${capitalized(featureName)};\n`,
         }, {
           name: `${capitalized(featureName)}.stories.tsx`,
           content: `import type { Meta, StoryObj } from '@storybook/react';\n\nimport ${capitalized(featureName)} from './${capitalized(featureName)}';\n\nconst meta: Meta<typeof ${capitalized(featureName)}> = {\n  component: ${capitalized(featureName)},\n  title: 'Example/${capitalized(featureName)}',\n};\nexport default meta;\n\ntype Story = StoryObj<typeof ${capitalized(featureName)}>;\n\nexport const Default: Story = {};\n`,
