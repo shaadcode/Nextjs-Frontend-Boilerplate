@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-styling-webpack',
     'storybook-dark-mode',
+    '@storybook/addon-a11y',
   ],
   staticDirs: [
     '..\\public',
