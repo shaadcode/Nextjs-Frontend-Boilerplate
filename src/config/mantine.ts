@@ -1,33 +1,38 @@
 /* eslint-disable no-restricted-imports */
 'use client';
 import type { ContainerProps, CSSVariablesResolver, MantineTheme } from '@mantine/core';
+import type { MantineCustomContainerSizes } from 'globals';
 import {
   colorsTuple,
 
   createTheme,
-
   DEFAULT_THEME,
   rem,
 } from '@mantine/core';
+
 import NextImage from 'next/image';
 import { montserrat } from '@/config/font';
-
 import { Link as NextIntlLink } from '@/config/i18n/navigation';
 
 // export const primary: MantineColorsTuple = colorsTuple('#fff');
 // export const secondary: MantineColorsTuple = colorsTuple('#fff');
 // export const accent: MantineColorsTuple = colorsTuple('#fff');
 
-const CONTAINER_SIZES: Record<string, string> = {
-  'xs': '320px',
-  'sm': '375px',
-  'md': '425px',
-  'lg': '768px',
-  'xl': '1024px',
-  '2xl': '1440px',
-  '3xl': '2560px',
+const CONTAINER_SIZES: Record<MantineCustomContainerSizes, string> = {
+  'xs': rem(320),
+  'sm': rem(375),
+  'md': rem(425),
+  'lg': rem(768),
+  'xl': rem(1024),
+  '2xl': rem(1440),
+  '3xl': rem(1920),
+  '4xl': rem(2560),
 };
 
+const isCustomContainerSize = (
+  size: unknown,
+): size is MantineCustomContainerSizes =>
+  typeof size === 'string' && size in CONTAINER_SIZES;
 export const theme = createTheme({
   components: {
     NavLink: {
@@ -48,7 +53,7 @@ export const theme = createTheme({
         root: {
           '--container-size': fluid
             ? '100%'
-            : size !== undefined && size in CONTAINER_SIZES
+            : size !== undefined && isCustomContainerSize(size)
               ? CONTAINER_SIZES[size]
               : rem(size),
         },
