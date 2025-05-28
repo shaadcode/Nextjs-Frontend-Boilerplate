@@ -20,6 +20,8 @@
 
 - 🧭 **Playwright** for E2E testing
 
+- 🔍 **React-scan** to check for application performance issues
+
 - 🧼 Strict linting via **ESLint** and **lint-staged**
 
 - 🎨 **TailwindCSS v4** ready
@@ -189,6 +191,10 @@ I have created configurations for each library that can improve the quality of t
 
 > Please note that these configs are personal. If you have any problems with the configuration, you will need to apply the changes manually
 
+
+
+> ❌ Important note: Although this Boilerplate supports development with tailwindCSS well and is partially integrated with Mantine, it is strongly recommended that the entire UI structure be developed with Mantine.
+
 ### 🎨 Mantine UI
 
 - Integrating Link Next.js and Next-Intl components with Mantine components
@@ -196,6 +202,24 @@ I have created configurations for each library that can improve the quality of t
 - Integrating Image Next.js component with Mantine Image component
 
 - Integrated with tailwindcss (beta)
+
+- expanding and standardizing theme sizes
+
+- ability to display notifications
+
+### 📦Storybook 8
+
+- connecting to chromatic for UI testing
+
+- support for styling with Webpack
+
+- integrated with mantine UI
+
+- dark mode for storybook UI
+
+- accessibility testing
+
+- user interaction testing
 
 ### 🌍 Next-Intl
 
@@ -208,6 +232,7 @@ I have created configurations for each library that can improve the quality of t
 ### 🌐 Axios
 
 - Built-in retry without a library and merge with tanstack query
+- Ability to add query parameters without a library
 
 ### 🔁 Tanstack Query
 
@@ -226,6 +251,8 @@ I have created configurations for each library that can improve the quality of t
 - Integrated with Next.js, Mantine, Next-Intl, typescript, vitest, eslint
 
 - In the search section, ignoring files that do not have a direct impact on the development process
+
+- Integrated with tailwindCSS (to increase development quality with mantine)
 
 ---
 
