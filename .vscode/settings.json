@@ -59,6 +59,8 @@
   "i18n-ally.localesPaths": [
     "src/config/i18n/messages"
   ],
+
+  "tailwindCSS.classAttributes": ["classNames"],
   "i18n-ally.keystyle": "nested",
   // Disable the default formatter, use ESLint instead
   "prettier.enable": false,
