@@ -12,6 +12,7 @@ const config: StorybookConfig = {
     '@storybook/addon-styling-webpack',
     'storybook-dark-mode',
     '@storybook/addon-a11y',
+    '@storybook/addon-interactions',
   ],
   staticDirs: [
     '..\\public',
