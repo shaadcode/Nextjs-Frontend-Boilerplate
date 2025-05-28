@@ -1,6 +1,7 @@
 import type { AxiosError } from 'axios';
 import axios from 'axios';
 import { apiConfig } from '@/config/api';
+import createQueryParams from '@/utils/url/addQueryParams';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_API_URL;
 
@@ -24,6 +25,7 @@ apiClient.interceptors.response.use(
         break;
     }
 
+    // retry management
     if (config?.retry?.enabled) {
       config.retry.storeCount = config.retry.storeCount ?? 0;
       const maxRetries = config.retry.maxCount ?? apiConfig.retry.maxCount;
@@ -40,6 +42,18 @@ apiClient.interceptors.response.use(
       }
     }
 
+    // query
+
     return Promise.reject(error);
   },
 );
+
+apiClient.interceptors.request.use((config) => {
+  const { queryParams } = config;
+
+  if (queryParams) {
+    createQueryParams(queryParams, config);
+  }
+
+  return config;
+});

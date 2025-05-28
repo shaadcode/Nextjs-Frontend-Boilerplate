@@ -117,6 +117,28 @@ declare module 'axios'{
        */
       enabled?: boolean;
     };
+    /**
+     * Represents a map of query parameters to be appended to a URL.
+     *
+     * Supports:
+     * - Single values (`string` or `number`)
+     * - Multiple values as arrays (`(string | number)[]`)
+     * - Values can be omitted if `undefined` or `null`
+     *
+     * Example usages:
+     * ```ts
+     * const queryParams: QueryParams = {
+     *   page: 2,
+     *   search: "hello world",
+     *   tags: ["js", "ts"],
+     *   sort: undefined, // will be ignored
+     * };
+     * ```
+     *
+     * Will be encoded as:
+     * `/path?page=2&search=hello+world&tags=js&tags=ts`
+     */
+    queryParams?: Record<string, string | number | (string | number)[]>;
   };
 }
 
