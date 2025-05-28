@@ -61,6 +61,7 @@
   --color-secondary-800: var(--mantine-color-secondary-8);
   --color-secondary-900: var(--mantine-color-secondary-9);
 
+  /* breakpoints */
   --breakpoint-xs: var(--mantine-breakpoint-xs);
   --breakpoint-sm: var(--mantine-breakpoint-sm);
   --breakpoint-md: var(--mantine-breakpoint-md);
