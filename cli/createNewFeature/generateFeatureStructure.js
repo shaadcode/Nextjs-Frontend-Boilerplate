@@ -44,13 +44,13 @@ export async function generateFeatureStructure(
     actions: {
       name: 'actions',
       type: 'folder',
-      files: [{ name: `${featureName}.action.ts`, content: `'use server';\ntype ${featureName}ActionParams = {\n  any: unknown;\n};\n\nexport const ${featureName}Action = async (params: ${featureName}ActionParams) => {\n\n};\n` }],
+      files: [{ name: `${featureName}.action.ts`, content: `'use server';\ntype ${capitalized(featureName)}ActionParams = {\n  any: unknown;\n};\n\nexport const ${featureName}Action = async (params: ${capitalized(featureName)}ActionParams) => {\n\n};\n` }],
 
     },
     api: {
       name: 'api',
       type: 'folder',
-      files: [{ name: `${featureName}.api.ts`, content: `import { apiClient } from '@/config/axios';\n\nexport const get${capitalized(featureName)}Data = async () => {\n  const response = await apiClient.get('/api/example');\n  return response.data;\n};\n` }],
+      files: [{ name: `${featureName}.api.ts`, content: `import { apiClient } from '@/config/api/axios';\n\nexport const get${capitalized(featureName)}Data = async () => {\n  const response = await apiClient.get('/api/example');\n  return response.data;\n};\n` }],
 
     },
     components: {

@@ -20,6 +20,9 @@ async function main() {
       if (!value) {
         return '❌ Please enter a name.';
       }
+      if (value.includes('-')) {
+        return '❌ Hyphens (-) are not allowed in the name.';
+      }
       if (!/^[a-z][\w-]{1,29}$/i.test(value)) {
         return '❌ Only letters, numbers, hyphens (-) and underscores (_) are allowed. Must start with a letter.';
       }
