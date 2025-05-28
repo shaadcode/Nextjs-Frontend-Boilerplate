@@ -1,3 +1,33 @@
+# [1.9.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.8.0...v1.9.0) (2025-05-28)
+
+
+### Bug Fixes
+
+* **config:** fix eslint error for style/jsx-curly-brace-presence rule in CLI ([f047f3b](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/f047f3b86430693b71bfd05c9a6987c61f2742a0))
+* **testing:** fixed the issue of github action failing due to tests ([2b6186b](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/2b6186b4950532205ea4ed9ab2b628fb7a469713))
+
+
+### Features
+
+* **config:** add the ability to test components in storybook ([c6a98dc](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/c6a98dc9d7eb35d3974bb8243ee08eed125d47d7))
+* **config:** added the ability to create queries in axios ([db020c9](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/db020c94362a91f9539972e90c281e0c810bc257))
+* **config:** adding transparent value to colors in mantine ui ([1d3fcb8](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/1d3fcb885d78c41e3141e17b66f0efd64dc54e8a))
+* **config:** adding WCAG testing with storybook ([20fba0f](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/20fba0fb1c8a54c9078c93f803d05f4ef70378d3))
+* **config:** enable Tailwind CSS IntelliSense for `classNames` prop ([7728add](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/7728addfaf3e70f7d43e0003730a8954db51936a))
+* **config:** expanding the size prop in the Container component ([ad87242](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/ad87242cd2bf128f84751c979099c9c67ce3a646))
+* **config:** expansion and standardization of sizes in mantine ([6250255](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/6250255dd1fb7539def442204516c85a18143f9f))
+* **config:** mantine UI integration with tailwindcss ([19c4343](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/19c4343268acb4a4d7881cf085f1bdb00464f8f8))
+* **config:** remove test-results from git tracking ([f92cecc](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/f92cecc4cd10cdb7aa865afb559360557d85d14d))
+* **deps:** add the mantine notifications library ([44be89f](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/44be89fa64e73ee5d95f0caa55371aca9a93daf8))
+* **deps:** adding react-scan library for performance checking ([3a124d2](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/3a124d2fce479a6bc70c6cd4a6815091171ef386))
+
+
+### Performance Improvements
+
+* **config:** add validation that the use of - (hyphen) in names is prohibited ([991359c](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/991359c666f22182a0a3c97a12c9196526cffa8c))
+* **config:** creating a modular structure to manage site page paths ([58b8841](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/58b8841438d891cb3109a9d7ce6e304b33d3a220))
+* **config:** transferring Mantine styles to server providers ([4bc8fe7](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/4bc8fe7e502759e7f3a421adeb8445574aec6d26))
+
 # [1.8.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.7.0...v1.8.0) (2025-05-24)
 
 
