@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 
+import { env } from 'node:process';
+
 import { mantineHtmlProps } from '@mantine/core';
-
 import { GoogleAnalytics } from '@next/third-parties/google';
-import { hasLocale } from 'next-intl';
 
+import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { montserrat } from '@/config/font';
+
 import routing from '@/config/i18n/routing';
 
+import ReactScan from '@/config/react-scan';
 import Providers from '@/Providers';
-
 import './../globals.css';
 
 export const metadata: Metadata = {
@@ -30,6 +32,9 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale} {...mantineHtmlProps}>
+      {
+        env.NODE_ENV === 'development' ? <ReactScan /> : null
+      }
       <body className={`${montserrat.className}`}>
         <Providers>{children}</Providers>
       </body>
