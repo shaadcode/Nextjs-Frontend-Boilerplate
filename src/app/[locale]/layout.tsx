@@ -1,17 +1,16 @@
 import type { Metadata } from 'next';
 
-import { env } from 'node:process';
-
 import { mantineHtmlProps } from '@mantine/core';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
+
 import { montserrat } from '@/config/font';
 
 import routing from '@/config/i18n/routing';
-
 import ReactScan from '@/config/react-scan';
+import { env } from '@/env';
 import Providers from '@/Providers';
 import './../globals.css';
 

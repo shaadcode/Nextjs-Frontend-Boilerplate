@@ -92,6 +92,11 @@ export default antfu(
             importNames: ['default', 'Link'],
             message: 'The use of next-intl links is prohibited. Use the `Anchor` component from @mantine/core.',
           },
+          {
+            name: 'node:process',
+            importNames: ['env'],
+            message: 'Import env variables from @/env',
+          },
         ],
       }],
       'style/jsx-curly-brace-presence': ['error', {
