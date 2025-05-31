@@ -1,3 +1,11 @@
+## [1.9.1](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.9.0...v1.9.1) (2025-05-31)
+
+
+### Bug Fixes
+
+* **config:** fix the problem of environment variable not working in the root of the project ([0e29193](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/0e291938a34c57075a57617beb75134bb364858a))
+* **config:** fixed the issue of browsers not being installed during playwright tests ([8fd02d3](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/8fd02d3118837758403fa9e1ad4fba844e6809c1))
+
 # [1.9.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.8.0...v1.9.0) (2025-05-28)
 
 
