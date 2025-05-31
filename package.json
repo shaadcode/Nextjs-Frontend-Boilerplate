@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "author": {
     "name": "seyed mojtaba shadab",
     "email": "shaadcode@gmail.com",
@@ -12,7 +12,7 @@
   "repository": "https://github.com/shaadcode/Nextjs-Frontend-Boilerplate",
   "engines": {
     "node": ">=20",
-    "pnpm": "10.10.0",
+    "pnpm": "10.11.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm"
   },

@@ -62,7 +62,7 @@ First, check the following prerequisites. To check the node version, use the `no
 
 - **Node.js** ≥ 20
 
-- **pnpm** = 10.10.0
+- **pnpm** = 10.11.0
 
 📍 tip: **Depending on your experience and needs, you can use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm)**
 
@@ -269,7 +269,7 @@ src/config/i18n/messages/{locale}.json
 1. Create a new translation file in the path `src/config/i18n/messages/{langKey}.json`. Note that you must replace `langKey` with your desired language key.
 
 2. Add new text keys:
-   
+
    ```json
    {
      "key": "text"
@@ -277,7 +277,7 @@ src/config/i18n/messages/{locale}.json
    ```
 
 3. Use in component:
-   
+
    ```jsx
    const t = useTranslations();
    return <Text>{t('key')}</Text>;
