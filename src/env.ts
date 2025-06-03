@@ -9,6 +9,7 @@ export const env = createEnv({
     PORT: z.coerce.number().optional(),
     ANALYZE: z.enum(['true', 'false']).optional(),
     CI: z.enum(['true', 'false']).optional(),
+    USE_I18N_LOCALE_PREFIX: z.enum(['true', 'false']),
   },
   client: {
     NEXT_PUBLIC_BASE_API_URL: z.string().url(),
@@ -17,6 +18,7 @@ export const env = createEnv({
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
     PORT: process.env.PORT,
+    USE_I18N_LOCALE_PREFIX: process.env.USE_I18N_LOCALE_PREFIX,
     ANALYZE: process.env.ANALYZE,
     CI: process.env.CI,
     NEXT_PUBLIC_BASE_API_URL: process.env.NEXT_PUBLIC_BASE_API_URL,

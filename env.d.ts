@@ -7,7 +7,7 @@ declare namespace NodeJS {
     PORT: number;
     NEXT_PUBLIC_BASE_API_URL: string;
     NEXT_PUBLIC_APP_URL: string;
-
+    USE_I18N_LOCALE_PREFIX: 'true' | 'false' | undefined;
     SKIP_ENV_VALIDATION: 'true' | 'false' | undefined;
   }
 }

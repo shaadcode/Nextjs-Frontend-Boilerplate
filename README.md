@@ -191,8 +191,6 @@ I have created configurations for each library that can improve the quality of t
 
 > Please note that these configs are personal. If you have any problems with the configuration, you will need to apply the changes manually
 
-
-
 > ❌ Important note: Although this Boilerplate supports development with tailwindCSS well and is partially integrated with Mantine, it is strongly recommended that the entire UI structure be developed with Mantine.
 
 ### 🎨 Mantine UI
@@ -228,6 +226,8 @@ I have created configurations for each library that can improve the quality of t
 - vscode integration: Using the i18n Ally plugin (if you install this plugin)
 
 - storybook: Internationalization test within Storybook
+
+- Switch between Next-intl strategies for internationalization
 
 ### 🌐 Axios
 
@@ -269,7 +269,7 @@ src/config/i18n/messages/{locale}.json
 1. Create a new translation file in the path `src/config/i18n/messages/{langKey}.json`. Note that you must replace `langKey` with your desired language key.
 
 2. Add new text keys:
-
+   
    ```json
    {
      "key": "text"
@@ -277,7 +277,7 @@ src/config/i18n/messages/{locale}.json
    ```
 
 3. Use in component:
-
+   
    ```jsx
    const t = useTranslations();
    return <Text>{t('key')}</Text>;
