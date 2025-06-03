@@ -60,7 +60,7 @@
     "src/config/i18n/messages"
   ],
 
-  "tailwindCSS.classAttributes": ["classNames"],
+  "tailwindCSS.classAttributes": ["classNames", "className"],
   "i18n-ally.keystyle": "nested",
   // Disable the default formatter, use ESLint instead
   "prettier.enable": false,
