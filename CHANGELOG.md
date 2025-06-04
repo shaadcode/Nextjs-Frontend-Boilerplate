@@ -1,3 +1,22 @@
+# [1.10.0](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.9.1...v1.10.0) (2025-06-04)
+
+
+### Bug Fixes
+
+* **config:** fixed the issue where autocomplete for className was not working ([2357448](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/23574488b25193ea5fade8ab831ae6bf299a0fa9))
+
+
+### Features
+
+* **config:** added shared folder to manage shared sections ([8112e71](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/8112e71fafa4a800ea0b1571e4da6afdefe77edc))
+* **config:** creating a new CLI for initial project setup ([87d4e1c](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/87d4e1cff5a6038a673324e3bb32a4987781b971))
+* **config:** switch between Next-intl strategies for internationalization ([b4ebc92](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/b4ebc9243ccc958ccaef013d436d5fe7ee452a53))
+
+
+### Performance Improvements
+
+* **config:** improved CLI structure for building new features ([7ecdb47](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/commit/7ecdb4727139766a678141ecd5dc2717f14603b5))
+
 ## [1.9.1](https://github.com/shaadcode/Nextjs-Frontend-Boilerplate/compare/v1.9.0...v1.9.1) (2025-05-31)
 
 
