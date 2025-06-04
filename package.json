@@ -35,6 +35,7 @@
     "deploy:simple": "pnpm build && git push",
     "deploy:strict": "pnpm check-types && pnpm lint && pnpm test && pnpm build && git push",
     "new-feature": "node ./cli/createNewFeature/index.js",
+    "setup-project": "node ./cli/setup-project/index.js",
     "prepare": "husky"
   },
   "dependencies": {

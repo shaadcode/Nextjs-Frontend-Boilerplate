@@ -26,3 +26,5 @@ export const env = createEnv({
   },
   skipValidation: process.env.SKIP_ENV_VALIDATION === 'true',
 });
+
+export type EnvVars = typeof env;
